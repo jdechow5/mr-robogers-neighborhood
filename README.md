@@ -33,6 +33,7 @@ _This webpage will accept a users numerical input and display a modified version
 
 ## Tests
 
+<!--Exploring different ways to solve this--> 
 Describe beepBoopify()
 
 Test: "It should return an array with 0 if the number 0 is inputted."
