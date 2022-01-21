@@ -7,4 +7,10 @@ function createArray(num) {
   return numArray;
 };
 
-
+function splitNum(num) {
+  let split = num.toString().split("");
+  let newSplit = split.map(function (element) {
+    return parseInt(element);
+  });
+  return newSplit;
+};
