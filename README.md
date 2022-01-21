@@ -39,6 +39,12 @@ Test: "It should take a number and return an array with numbers beginning at 0 u
 Code: createArray(3);
 Expected Output: [0,1,2,3]
 
+Describe: splitArray()
+
+Test: "It should take input and turn it into an array of it's digits and then return the array"
+Code: splitArray(11);
+Expected Output: [1, 1]
+
 ## License
 
 _Contact Justin Dechow at justin.dechow@gmail.com with any issues or concerns about this code_
