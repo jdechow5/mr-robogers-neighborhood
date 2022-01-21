@@ -37,11 +37,11 @@ Describe beepBoopify()
 
 Test: "It should return an array with 0 if the number 0 is inputted."
 Code: beepBoopify(0);
-Expected Output: "0"
+Expected Output: [0]
 
-Test: "It should return a string with numbers beginning at 0, up to number input"
+Test: "It should return an array with numbers beginning at 0, up to number input"
 Code: beepBoopify(3);
-Expected Output: "0123"
+Expected Output: [0,1,2,3]
 
 ## License
 
