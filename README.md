@@ -39,11 +39,25 @@ Test: "It should take a number and return an array with numbers beginning at 0 u
 Code: createArray(3);
 Expected Output: [0,1,2,3]
 
-Describe: splitArray()
+Describe: splitNum()
 
 Test: "It should take input and turn it into an array of it's digits and then return the array"
 Code: splitArray(11);
 Expected Output: [1, 1]
+
+Describe: checkNumber()
+
+Test: "It should accept an array and run a loop looking for 3, if 3 is in array it will return 'Won't you be my neighbor?"
+Code: checkNumber([1, 2, 3])
+Expected Output: "Won't you be my neighbor?"
+
+Test: "If a 3 is not present, check for a 2 and if found return 'Boop!'"
+Code: numberChecker([1,2,4])
+Expected Output: "Boop!"
+
+Test: "If 2 && 3 are not present, check for 1 and if found return 'Beep!'"
+Code: numberChecker([1, 4, 5])
+Expected Output: "Beep!"
 
 ## License
 
