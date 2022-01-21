@@ -1,6 +1,8 @@
 //Business Logic
 function beepBoopify(num) {
-  if (num === 0) {
-    return [0];
+  let numberArray = [];
+  for (let i = 0; i <= num; i++) {
+    numberArray.push(i);
   }
+  return numberArray;
 }
