@@ -43,6 +43,10 @@ Test: "It should return an array with numbers beginning at 0, up to number input
 Code: beepBoopify(3);
 Expected Output: [0,1,2,3]
 
+Test: "It should change 1 to 'Beep!'
+Code: beepBoopify(5);
+Expected Output: ['Beep!', 2, 3, 4, 5]
+
 ## License
 
 _Contact Justin Dechow at justin.dechow@gmail.com with any issues or concerns about this code_
