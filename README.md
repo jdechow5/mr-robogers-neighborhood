@@ -48,16 +48,39 @@ Expected Output: [1, 1]
 Describe: checkNumber()
 
 Test: "It should accept an array and run a loop looking for 3, if 3 is in array it will return 'Won't you be my neighbor?"
-Code: checkNumber([1, 2, 3])
+Code: checkNumber([1, 2, 3]);
 Expected Output: "Won't you be my neighbor?"
 
 Test: "If a 3 is not present, check for a 2 and if found return 'Boop!'"
-Code: numberChecker([1,2,4])
+Code: numberChecker([1,2,4]);
 Expected Output: "Boop!"
 
 Test: "If 2 && 3 are not present, check for 1 and if found return 'Beep!'"
-Code: numberChecker([1, 4, 5])
+Code: numberChecker([1, 4, 5]);
 Expected Output: "Beep!"
+
+Describe: beepBopify()
+
+Test: "If 0 is input it should return [0]"
+Code: beepBopify(0);
+Expected Output: [0]
+
+Test: "If 1 is input it should return [0, 'Beep!']"
+Code: beepBopify(1);
+Expected Output: [0, 'Beep!']
+
+Test: "If 2 is input it should return [0, 'Beep!', 'Boop!']"
+Code: beepBopify(2);
+Expected Output: [0, 'Beep!', 'Boop!']
+
+Test: "If 3 is input it should return [0, 'Beep!', 'Boop!', 'Won't you be my neighbor?']"
+Code: beepBopify(3);
+Expected Output: [0, 'Beep!', 'Boop!', 'Won't you be my neighbor?']
+
+Test: "It should take any value and return 0 to that number, replace any numbers with 3 to 'Won't you be my neighbor?', numbers with 2 but not 3 with 'Boop!', and any numbers with 1 but not 2 or 3 to 'Beep!'"
+Code: beepBopify(6)
+Expected Output: [0, 'Beep!', 'Boop!', 'Won't you be my neighbor?', 4, 5, 6]
+
 
 ## License
 

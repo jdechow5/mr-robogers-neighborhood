@@ -33,3 +33,13 @@ function checkNumber(array) {
   }
   return parseInt(array.join(""));
 }
+
+function beepBopify(num) {
+  let robot = createArray(num).map(function (element) {
+    return splitNum(element);
+  });
+  let newRobot = robot.map(function (element) {
+    return checkNumber(element);
+  });
+  return newRobot;
+}
