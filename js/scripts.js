@@ -42,15 +42,19 @@ function beepBopify(num) {
     return checkNumber(element);
   });
   return newRobot;
-}
+};
 
 //User Interface Logic
 $(document).ready(function () {
   $("form#robot").submit(function (event) {
     event.preventDefault();
-    const number = $("#numberInput").val();
-    const results = beepBopify(number);
-    $("#results").html(results.join(", "));
+    let number = parseInt($("#numberInput").val());
+    if (!(number > 0) && !(number < 0) && !(number === 0)) {
+      $("#results").text("Please enter a number");
+    } else if (number < 0) {
+      $("#results").text("Please enter a positive number");
+    } else {
+      $("#results").text(beepBopify(number).join(", "));
+    }
   });
 });
-
