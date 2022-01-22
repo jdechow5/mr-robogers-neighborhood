@@ -46,7 +46,11 @@ function beepBopify(num) {
 
 //User Interface Logic
 $(document).ready(function () {
-  $("#robot").submit(function (event) {
+  $("form#robot").submit(function (event) {
     event.preventDefault();
-  })
-}
+    const number = $("#numberInput").val();
+    const results = beepBopify(number);
+    $("#results").html(results.join(", "));
+  });
+});
+
