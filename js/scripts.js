@@ -48,5 +48,11 @@ function beepBopify(num) {
 $(document).ready(function () {
   $("form#robot").submit(function (event) {
     event.preventDefault();
+    let numberInput = parseInt($("#numberInput").val());
+    if (number < 0) {
+      $("#result").text("Mr. Roboger's would like a positive number!");
+    } else {
+      $("#result").html(beepBopify(num));
+    }
   })
 })
