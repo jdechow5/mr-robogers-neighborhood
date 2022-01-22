@@ -43,3 +43,10 @@ function beepBopify(num) {
   });
   return newRobot;
 }
+
+//User Interface Logic
+$(document).ready(function () {
+  $("form#robot").submit(function (event) {
+    event.preventDefault();
+  })
+})
